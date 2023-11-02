@@ -1,20 +1,49 @@
 print('Hola Mundo')
 
-def sumar() -> int:
-    num_a: int = int(input("Ingrese un numero: "))
-    num_b: int = int(input("Ingrese otro numero"))
-    return num_a + num_b
+def sumar(n1: int, n2: int) -> int:
+    return n1 + n2
+
+
+def restar() -> None:
+    numero_1 = input("Ingrese un numero: ")
+    numero_2 = input("Ingrese otro numero: ")
+    resta = numero_1 - numero_2
+    print("El resultado de la resta es:", resta)
+
+
+def multiplicar(n1: int, n2: int) -> int:
+    return n1 * n2
+
+
+def dividir(num1: int, num2: int) -> None:
+    resultado: float = num1 / num2
+
+    print(f'El resultado de la división entre {num1} y {num2} es: {resultado}')
+
+
+def modulo(num1: int, num2: int) -> int:
+    return num1 % num2
 
 def main() -> None:
-    opcion = input("Ingrese una opción: ")
+    opcion: str = input("Ingrese una opción: ")
+    num1: int = int(input('Ingrese un número: '))
+    num2: int = int(input('Ingrese otro número: '))
 
     if opcion == '+':
-        sumar()
+        sumar(num1, num2)
     elif opcion == '-':
-        restar()
+        restar(num1, num2)
     elif opcion == '*':
-        multiplicar()
+        multiplicar(num1, num2)
     elif opcion == '/':
-        dividir()
+        dividir(num1, num2)
+    elif opcion == '%':
+        modulo(num1, num2)
     else:
         print('Opción inválida')
+<<<<<<< HEAD
+=======
+
+
+main()
+>>>>>>> main
