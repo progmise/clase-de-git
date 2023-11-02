@@ -41,9 +41,4 @@ def main() -> None:
         modulo(num1, num2)
     else:
         print('Opción inválida')
-<<<<<<< HEAD
-=======
-
-
 main()
->>>>>>> main
