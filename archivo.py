@@ -22,6 +22,10 @@ def dividir(num1: int, num2: int) -> None:
     print(f'El resultado de la división entre {num1} y {num2} es: {resultado}')
 
 
+def modulo(num1: int, num2: int) -> int:
+    return num1 % num2
+
+
 def main() -> None:
     opcion: str = input("Ingrese una opción: ")
     num1: int = int(input('Ingrese un número: '))
@@ -35,6 +39,8 @@ def main() -> None:
         multiplicar(num1, num2)
     elif opcion == '/':
         dividir(num1, num2)
+    elif opcion == '%':
+        modulo(num1, num2)
     else:
         print('Opción inválida')
 
