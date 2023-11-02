@@ -1,5 +1,9 @@
 print('Hola Mundo')
 
+def multiplicar(n1:int,n2:int) -> int:
+    return n1 * n2
+
+
 def dividir(num1: int, num2: int) -> None:
     resultado: float = num1 / num2
 
