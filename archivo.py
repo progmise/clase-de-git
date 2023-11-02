@@ -1,15 +1,26 @@
 print('Hola Mundo')
 
+def dividir(num1: int, num2: int) -> None:
+    resultado: float = num1 / num2
+
+    print(f'El resultado de la división entre {num1} y {num2} es: {resultado}')
+
+
 def main() -> None:
-    opcion = input("Ingrese una opción: ")
+    opcion: str = input("Ingrese una opción: ")
+    num1: int = int(input('Ingrese un número: '))
+    num2: int = int(input('Ingrese otro número: '))
 
     if opcion == '+':
-        sumar()
+        sumar(num1, num2)
     elif opcion == '-':
-        restar()
+        restar(num1, num2)
     elif opcion == '*':
-        multiplicar()
+        multiplicar(num1, num2)
     elif opcion == '/':
-        dividir()
+        dividir(num1, num2)
     else:
         print('Opción inválida')
+
+
+main()
